@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { createStore, applyMiddleware, compose } from "redux";
+import reducers from "./Reducers";
+import UI from "./Containers/UIcontainer";
+import thunk from "redux-thunk";
+import { Provider } from "react-redux";
+import styled from "styled-components";
 
 function App() {
+  const middlewares = [thunk];
+  if (process.env.NODE_ENV === `development`) {
+    const { logger } = require(`redux-logger`);
+    // middlewares.push(logger);
+  }
+  const store = compose(applyMiddleware(...middlewares))(createStore)(reducers);
+  // const store = createStore(reducers);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <UI />
+    </Provider>
   );
 }
 
