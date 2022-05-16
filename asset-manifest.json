@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/aditya199746/makeen/static/css/main.c9f0764d.css",
-    "main.js": "/aditya199746/makeen/static/js/main.c17c201f.js",
-    "static/js/787.2cc42d94.chunk.js": "/aditya199746/makeen/static/js/787.2cc42d94.chunk.js",
-    "index.html": "/aditya199746/makeen/index.html",
-    "main.c9f0764d.css.map": "/aditya199746/makeen/static/css/main.c9f0764d.css.map",
-    "main.c17c201f.js.map": "/aditya199746/makeen/static/js/main.c17c201f.js.map",
-    "787.2cc42d94.chunk.js.map": "/aditya199746/makeen/static/js/787.2cc42d94.chunk.js.map"
+    "main.css": "/makeen/static/css/main.c9f0764d.css",
+    "main.js": "/makeen/static/js/main.41057e1b.js",
+    "static/js/787.2cc42d94.chunk.js": "/makeen/static/js/787.2cc42d94.chunk.js",
+    "index.html": "/makeen/index.html",
+    "main.c9f0764d.css.map": "/makeen/static/css/main.c9f0764d.css.map",
+    "main.41057e1b.js.map": "/makeen/static/js/main.41057e1b.js.map",
+    "787.2cc42d94.chunk.js.map": "/makeen/static/js/787.2cc42d94.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c9f0764d.css",
-    "static/js/main.c17c201f.js"
+    "static/js/main.41057e1b.js"
   ]
 }
